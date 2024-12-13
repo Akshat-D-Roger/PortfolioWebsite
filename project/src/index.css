@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #f6e7ea 0%, #e7f0fd 100%);
+  color: #4a5568;
+}
+
+.cardo-regular {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 2s ease-out forwards;
+}
+
+.nav-gradient {
+  background: linear-gradient(135deg, rgba(246, 231, 234, 0.8) 0%, rgba(231, 240, 253, 0.8) 100%);
+}
+
+.section-gradient-1 {
+  background: linear-gradient(135deg, #e9f2ff 0%, #f7e8f6 100%);
+}
+
+.section-gradient-2 {
+  background: linear-gradient(135deg, #f7e8f6 0%, #fff1e6 100%);
+}
+
+.gradient-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.tag-gradient {
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+}
+
+.typing{
+  animation: typing 3s steps(12,end) forwards;
+}
+
+@keyframes typing{
+  from {width:0}
+  to {width:100%}
+}
