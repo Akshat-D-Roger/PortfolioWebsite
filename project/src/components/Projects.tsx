@@ -1,8 +1,15 @@
-import React from 'react';
 import foreverBuy from '../assets/forever-buy.png'
 import bloggos from '../assets/bloggos.png'
-import { ExternalLink, Github } from 'lucide-react';
+import webweaver from '../assets/web-weaver.png'
+import { Github } from 'lucide-react';
 const projects = [
+  {
+    title: "WebWeaver (Builds web apps using Gen AI)",
+    description: " It lets users input a natural language prompt and receive a fully functional web app scaffold with code and live preview using web containers to run the application in browser",
+    image: webweaver,
+    tags: ["NextJS", "TailwindCSS","Zustand", "Vercel AI SDK", "Gemini 2.5", "ShadCN"],
+    links:["https://foreverbuy-akshat.vercel.app/", "https://github.com/Akshat-D-Roger/ReactProjects/tree/main/ForeverBuy"]
+  },
   {
     title: "E-commerce Platform",
     description: "A full-stack e-commerce solution with User Authentication, debouncing for search, pagination to display products, and advanced sorting and filtering",
@@ -27,7 +34,7 @@ export const Projects = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="gradient-card rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+            <a key={index} href={project.links[0]} target='blank' className="gradient-card rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
               <img src={project.image} alt={project.title} className="w-full h-48 object-cover"/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
@@ -40,15 +47,12 @@ export const Projects = () => {
                   ))}
                 </div>
                 <div className='flex gap-[1rem] pt-[3rem]'>
-                  <a href={project.links[0]} target='blank' className='hover:text-blue-600'>
-                  <ExternalLink />
-                  </a>
                   <a href={project.links[1]} target='blank' className='hover:text-blue-600'>
                   <Github />
                   </a>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
