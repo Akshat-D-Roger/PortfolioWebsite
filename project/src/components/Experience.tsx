@@ -2,9 +2,9 @@ import React from 'react';
 
 const experiences = [
   {
-    company: "Capgemini Engineering (Aricent Techonologies)",
+    company: "Aricent Techonologies",
     position: "FullStack Developer (Senior Analyst)",
-    period: "June 2020 - 2024",
+    period: "June 2022 - 2024",
     description: ["I have worked as a FullStack Developer for Capgemini Engineering, where I was involved in a client project for Samsung Research Vietnam.",
       "I have also worked onsite at Samsung Reseacrh, Vietnam to proactively address bugs, issues, and provide technical support and ensure seamless functionality.",
       "Upgraded backend architecture and implemented critical backend features, including timeslot reconfiguration, to meet customer demands and IEEE standards within tight deadlines.",
@@ -17,7 +17,7 @@ const experiences = [
   {
     company: "Capgemini Engineering",
     position: "Software Engineer Intern",
-    period: "Jan 2020 - June 2020",
+    period: "Jan 2022 - June 2022",
     description: ["Executed comprehensive manual regression testing of 700+ test cases to validate hardware functionality.",
       "Prepared an installer using installshield with collaboration from cross-functional teams",
       "Integrated frontend and backend services using HTTPS requests and REST APIs, reducing manual effort by 90%",
