@@ -15,7 +15,7 @@ const experiences = [
     ]
   },
   {
-    company: "Capgemini Engineering",
+    company: "Aricent Techonologies",
     position: "Software Engineer Intern",
     period: "Jan 2022 - June 2022",
     description: ["Executed comprehensive manual regression testing of 700+ test cases to validate hardware functionality.",
